@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c89a8bdb4bb80488e9aafd274a827808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turtleRigidBody: {fileID: 1372029639}
+  turtleRB: {fileID: 1372029639}
   moveSpeed: 5
 --- !u!61 &1372029642
 BoxCollider2D:
