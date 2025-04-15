@@ -381,7 +381,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 1b2dde7650efd468ebca4a83b8fa4892, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -405,7 +405,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.020464778}
+  m_Offset: {x: 0, y: 0.030575335}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -415,7 +415,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1.9590704}
+  m_Size: {x: 1, y: 1.9388493}
   m_EdgeRadius: 0
 --- !u!114 &1178258031
 MonoBehaviour:
@@ -431,6 +431,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerRB: {fileID: 1178258029}
   groundCheck: {fileID: 1370897328}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 128
+  moveSpeed: 5
+  jumpSpeed: 8
+  groundDecay: 0.76
   grounded: 0
 --- !u!1 &1370897327
 GameObject:
@@ -442,7 +448,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1370897329}
   - component: {fileID: 1370897328}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -483,7 +489,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.978058}
+  m_Offset: {x: 0, y: -0.9681772}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -493,7 +499,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 0.039203584}
+  m_Size: {x: 1, y: 0.058965206}
   m_EdgeRadius: 0
 --- !u!4 &1370897329
 Transform:

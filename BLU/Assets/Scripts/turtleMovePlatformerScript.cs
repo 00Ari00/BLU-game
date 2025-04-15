@@ -1,10 +1,15 @@
+using System;
 using UnityEngine;
 
 public class turtleMovePlatformerScript : MonoBehaviour
 {
     public Rigidbody2D playerRB;
     public BoxCollider2D groundCheck;
+    public LayerMask groundMask;
     public float moveSpeed = 5;
+    public float jumpSpeed = 8;
+    [Range(0f, 1f)]
+    public float groundDecay = 0.5f;
     public bool grounded;
     private float xInput;
     private float yInput;
@@ -18,12 +23,16 @@ public class turtleMovePlatformerScript : MonoBehaviour
 
     void FixedUpdate()
     {
+        CheckGround();
+        ApplyFriction();
         VerticalMove();
     }
 
     void GetInputs() {
         xInput = Input.GetAxis("Horizontal");
         yInput = Input.GetAxis("Vertical");
+
+        Debug.Log($"{xInput} {yInput}");
     }
 
     void HorizontalMove() {
@@ -33,16 +42,18 @@ public class turtleMovePlatformerScript : MonoBehaviour
     }
 
     void VerticalMove() {
-        if (Mathf.Abs(yInput) > 0) {
-            playerRB.linearVelocity = new Vector2(playerRB.linearVelocityX, yInput * moveSpeed);
+        if (Mathf.Abs(yInput) > 0 && grounded) {
+            playerRB.linearVelocity = new Vector2(playerRB.linearVelocityX, jumpSpeed);
         }
     }
 
     void CheckGround() {
-
+        grounded = Physics2D.OverlapAreaAll(groundCheck.bounds.min, groundCheck.bounds.max, groundMask).Length > 0;
     }
 
     void ApplyFriction() {
-
+        if (grounded && xInput == 0 && yInput == 0) {
+            playerRB.linearVelocity = new Vector2(playerRB.linearVelocityX * groundDecay, playerRB.linearVelocityY);
+        }
     }
 }
