@@ -30,9 +30,10 @@ public class turtleMovePlatformerScript : MonoBehaviour
 
     void GetInputs() {
         xInput = Input.GetAxis("Horizontal");
-        yInput = Input.GetAxis("Vertical");
+        yInput = Input.GetAxis("Jump");
 
         Debug.Log($"{xInput} {yInput}");
+
     }
 
     void HorizontalMove() {
@@ -43,7 +44,7 @@ public class turtleMovePlatformerScript : MonoBehaviour
 
     void VerticalMove() {
         if (Mathf.Abs(yInput) > 0 && grounded) {
-            playerRB.linearVelocity = new Vector2(playerRB.linearVelocityX, jumpSpeed);
+            playerRB.linearVelocity = new Vector2(playerRB.linearVelocityX, yInput * jumpSpeed);
         }
     }
 
@@ -53,7 +54,7 @@ public class turtleMovePlatformerScript : MonoBehaviour
 
     void ApplyFriction() {
         if (grounded && xInput == 0 && yInput == 0) {
-            playerRB.linearVelocity = new Vector2(playerRB.linearVelocityX * groundDecay, playerRB.linearVelocityY);
+            playerRB.linearVelocity *= groundDecay;
         }
     }
 }
