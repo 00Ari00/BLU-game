@@ -34,7 +34,7 @@ public class turtleMovePlatformerScript : MonoBehaviour
     void GetInputs()
     {
         xInput = Input.GetAxis("Horizontal");
-        yInput = Input.GetAxis("Vertical");
+        yInput = Input.GetAxis("Jump");
 
         // Debug.Log($"{xInput} {yInput}");
         Debug.Log($"{jumps} {jumping}");
@@ -66,7 +66,7 @@ public class turtleMovePlatformerScript : MonoBehaviour
 
     void ApplyFriction()
     {
-        if (grounded && xInput == 0 && Input.GetButtonUp("Vertical"))
+        if (grounded && xInput == 0 && Input.GetButtonUp("Jump"))
         {
             playerRB.linearVelocity *= groundDecay;
         }
