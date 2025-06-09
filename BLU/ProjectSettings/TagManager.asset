@@ -3,16 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Net
+  - Logic
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Turtle
   - Water
   - UI
-  - Player
-  - Ground
+  - 
+  - 
   - 
   - 
   - 
