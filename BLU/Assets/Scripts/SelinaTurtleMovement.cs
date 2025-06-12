@@ -11,7 +11,7 @@ public class SelinaTurtleMovement : MonoBehaviour
     
     void Start()
     {
-        transform.position new Vec3 (-38.46, -22.52, -4);
+     this.transform.position = new Vector3 (-38.46f, -22.52f, -4);
     }
     
     // Update is called once per frame
@@ -22,12 +22,16 @@ public class SelinaTurtleMovement : MonoBehaviour
     // This function is called every fixed framerate frane, if MonoBehaviour is enabled
     void FixedUpdate()
     {
+
+
+
         if (isMoving) {
-        turtleRB.linearVelocity = new Vector2(moveSpeed, turtleRB.linearVelocity.y);
+
+            turtleRB.linearVelocity = new Vector2(moveSpeed, turtleRB.linearVelocity.y);
         } 
 
-        if (trnasform.position.x >= stopXPosition) {
-            turtleRB.velocity = Vector2.zero;
+        if (transform.position.x >= stopXPosition) {
+            turtleRB.linearVelocity = Vector2.zero;
             isMoving = false;
         }
     }
