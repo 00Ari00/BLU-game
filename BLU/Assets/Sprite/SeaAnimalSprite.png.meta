@@ -297,7 +297,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SeaAnimalSprite_0: -6852929064472124983
+      SeaAnimalSprite_1: 6785710451152535496
+      SeaAnimalSprite_2: 6545142785831780066
+      SeaAnimalSprite_3: -6082138045449170675
+      SeaAnimalSprite_4: 3514823312935215817
+      SeaAnimalSprite_5: -57611193874185702
+      SeaAnimalSprite_6: -4945788635103872261
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
