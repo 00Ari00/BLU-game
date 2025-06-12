@@ -21,7 +21,7 @@ public class DialogueBoxManagementScript : MonoBehaviour
             _instance = this;
         }
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         textComponent.text = string.Empty;
@@ -59,7 +59,7 @@ public class DialogueBoxManagementScript : MonoBehaviour
         }
     }
 
-    IEnumerator TypeLine(string[] lines, float textSpeed)
+    public IEnumerator TypeLine(string[] lines, float textSpeed)
     {
         foreach (char c in lines[index].ToCharArray())
         {
