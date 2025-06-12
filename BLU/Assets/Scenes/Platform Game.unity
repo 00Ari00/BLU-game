@@ -665,7 +665,8 @@ Transform:
   - {fileID: 181854980}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
+
+
 --- !u!1 &803126526
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,8 +852,10 @@ MonoBehaviour:
   - Yayayayayayayaya we've reached the end
   - Idk we get out now wuh
   textSpeed: 0.05
-=======
->>>>>>> parent of fdb7b4e (Dialogue add)
+
+
+
+
 --- !u!1 &1178258024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1171,7 +1174,8 @@ Tilemap:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1214381434}
   m_Enabled: 1
-<<<<<<< HEAD
+
+
   m_Tiles: {}
   m_AnimatedTiles: {}
   m_TileAssetArray: []
@@ -1183,7 +1187,9 @@ Tilemap:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: 0, y: 0, z: 0}
   m_Size: {x: 0, y: 0, z: 1}
-=======
+
+
+
   m_Tiles:
   - first: {x: -10, y: -1, z: 0}
     second:
@@ -1229,7 +1235,10 @@ Tilemap:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -23, y: -1, z: 0}
   m_Size: {x: 23, y: 1, z: 1}
->>>>>>> parent of fdb7b4e (Dialogue add)
+
+
+
+
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -7322,7 +7331,8 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
-<<<<<<< HEAD
+
+
 --- !u!1 &1906237290
 GameObject:
   m_ObjectHideFlags: 0
@@ -7418,8 +7428,10 @@ MonoBehaviour:
   - It looks like we're in some sort of cave.
   - Maybe if we find our way out we can idk yadayada
   textSpeed: 0.05
-=======
->>>>>>> parent of fdb7b4e (Dialogue add)
+
+
+
+
 --- !u!1 &2119133776
 GameObject:
   m_ObjectHideFlags: 0
