@@ -665,6 +665,7 @@ Transform:
   - {fileID: 181854980}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &803126526
 GameObject:
   m_ObjectHideFlags: 0
@@ -850,6 +851,8 @@ MonoBehaviour:
   - Yayayayayayayaya we've reached the end
   - Idk we get out now wuh
   textSpeed: 0.05
+=======
+>>>>>>> parent of fdb7b4e (Dialogue add)
 --- !u!1 &1178258024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,6 +1171,7 @@ Tilemap:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1214381434}
   m_Enabled: 1
+<<<<<<< HEAD
   m_Tiles: {}
   m_AnimatedTiles: {}
   m_TileAssetArray: []
@@ -1179,6 +1183,53 @@ Tilemap:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: 0, y: 0, z: 0}
   m_Size: {x: 0, y: 0, z: 1}
+=======
+  m_Tiles:
+  - first: {x: -10, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  m_AnimatedTiles: {}
+  m_TileAssetArray:
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 9edb8d44ce3714c5d9004335afc9c0ed, type: 2}
+  m_TileSpriteArray:
+  - m_RefCount: 1
+    m_Data: {fileID: -1197644373, guid: a45c03c245f734b0d95c404ceeae5b42, type: 3}
+  m_TileMatrixArray:
+  - m_RefCount: 1
+    m_Data:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_TileColorArray:
+  - m_RefCount: 1
+    m_Data: {r: 1, g: 1, b: 1, a: 1}
+  m_TileObjectToInstantiateArray: []
+  m_AnimationFrameRate: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Origin: {x: -23, y: -1, z: 0}
+  m_Size: {x: 23, y: 1, z: 1}
+>>>>>>> parent of fdb7b4e (Dialogue add)
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -1601,7 +1652,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1366701048}
-  - {fileID: 803126527}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7272,6 +7322,7 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+<<<<<<< HEAD
 --- !u!1 &1906237290
 GameObject:
   m_ObjectHideFlags: 0
@@ -7367,6 +7418,8 @@ MonoBehaviour:
   - It looks like we're in some sort of cave.
   - Maybe if we find our way out we can idk yadayada
   textSpeed: 0.05
+=======
+>>>>>>> parent of fdb7b4e (Dialogue add)
 --- !u!1 &2119133776
 GameObject:
   m_ObjectHideFlags: 0
