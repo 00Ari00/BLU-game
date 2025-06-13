@@ -975,7 +975,7 @@ MonoBehaviour:
   message:
   - Yayayayaya made it
   - idkdidkdidk
-  textSpeed: 0
+  textSpeed: 0.05
 --- !u!1 &1178258024
 GameObject:
   m_ObjectHideFlags: 0

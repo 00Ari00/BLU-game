@@ -7,15 +7,15 @@ public class DialogueScript1 : MonoBehaviour
 
     void Update()
     {
-        DialogueBoxManagementScript._instance.GoToNextLine(message, textSpeed);
+        DialogueManagementScript._instance.GoToNextLine();
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Hit");
-        if (!DialogueBoxManagementScript._instance.gameObject.activeSelf && collision.gameObject.tag == "Player")
+        if (!DialogueManagementScript._instance.gameObject.activeSelf && collision.gameObject.tag == "Player")
         {
-            DialogueBoxManagementScript._instance.SetAndShowDialogue(message, textSpeed);
+            DialogueManagementScript._instance.SetAndShowDialogue(message, textSpeed);
         }
     }
 }

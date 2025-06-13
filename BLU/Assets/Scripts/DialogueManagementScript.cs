@@ -2,10 +2,13 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 
-public class DialogueBoxManagementScript : MonoBehaviour
+public class DialogueManagementScript : MonoBehaviour
 {
-    public static DialogueBoxManagementScript _instance;
+    public static DialogueManagementScript _instance;
     public TextMeshProUGUI textComponent;
+
+    private string[] message;
+    private float textSpeed;
 
     private int index;
 
@@ -27,12 +30,14 @@ public class DialogueBoxManagementScript : MonoBehaviour
         textComponent.text = string.Empty;
     }
 
-    public void SetAndShowDialogue(string[] message, float textSpeed)
+    public void SetAndShowDialogue(string[] lines, float speed)
     {
         index = 0;
+        message = lines;
+        textSpeed = speed;
 
         gameObject.SetActive(true);
-        StartCoroutine(TypeLine(message, textSpeed));
+        StartCoroutine(TypeLine());
 
     }
 
@@ -42,44 +47,45 @@ public class DialogueBoxManagementScript : MonoBehaviour
         textComponent.text = string.Empty;
     }
 
-    public void GoToNextLine(string[] lines, float textSpeed)
+    public void GoToNextLine()
     {
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("clicked");
-            if (textComponent.text == lines[index])
+            if (textComponent.text.Equals(message[index]))
             {
-                NextLine(lines, textSpeed);
+                NextLine();
             }
             else
             {
                 StopAllCoroutines();
-                textComponent.text = lines[index];
+                textComponent.text = message[index];
             }
         }
     }
 
-    public IEnumerator TypeLine(string[] lines, float textSpeed)
+    public IEnumerator TypeLine()
     {
-        foreach (char c in lines[index].ToCharArray())
+        foreach (char c in message[index].ToCharArray())
         {
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
         }
     }
 
-    void NextLine(string[] lines, float textSpeed)
+    void NextLine()
     {
-        if (index < lines.Length - 1)
+        if (index < message.Length - 1)
         {
             index++;
             textComponent.text = string.Empty;
-            StartCoroutine(TypeLine(lines, textSpeed));
+            StartCoroutine(TypeLine());
         }
         else
         {
-            gameObject.SetActive(false);
             textComponent.text = string.Empty;
+            Debug.Log(textComponent.text);
+            gameObject.SetActive(false);
         }
     }
 }

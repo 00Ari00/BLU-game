@@ -37,7 +37,7 @@ public class turtleMovePlatformerScript : MonoBehaviour
         yInput = Input.GetAxis("Jump");
 
         // Debug.Log($"{xInput} {yInput}");
-        Debug.Log($"{jumps} {jumping}");
+        // Debug.Log($"{jumps} {jumping}");
 
     }
 
