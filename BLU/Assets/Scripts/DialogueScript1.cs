@@ -12,6 +12,7 @@ public class DialogueScript1 : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Hit");
         if (!DialogueBoxManagementScript._instance.gameObject.activeSelf && collision.gameObject.tag == "Player")
         {
             DialogueBoxManagementScript._instance.SetAndShowDialogue(message, textSpeed);
