@@ -1,7 +1,6 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
-using UnityEditor.VersionControl;
 
 public class DialogueBoxManagementScript : MonoBehaviour
 {
@@ -24,8 +23,8 @@ public class DialogueBoxManagementScript : MonoBehaviour
 
     void Start()
     {
-        textComponent.text = string.Empty;
         gameObject.SetActive(false);
+        textComponent.text = string.Empty;
     }
 
     public void SetAndShowDialogue(string[] message, float textSpeed)
@@ -47,6 +46,7 @@ public class DialogueBoxManagementScript : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            Debug.Log("clicked");
             if (textComponent.text == lines[index])
             {
                 NextLine(lines, textSpeed);
