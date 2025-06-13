@@ -1,7 +1,6 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
-using UnityEditor.VersionControl;
 
 public class DialogueBoxManagementScript : MonoBehaviour
 {
@@ -21,11 +20,11 @@ public class DialogueBoxManagementScript : MonoBehaviour
             _instance = this;
         }
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
-        textComponent.text = string.Empty;
         gameObject.SetActive(false);
+        textComponent.text = string.Empty;
     }
 
     public void SetAndShowDialogue(string[] message, float textSpeed)
@@ -47,6 +46,7 @@ public class DialogueBoxManagementScript : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            Debug.Log("clicked");
             if (textComponent.text == lines[index])
             {
                 NextLine(lines, textSpeed);
@@ -59,7 +59,7 @@ public class DialogueBoxManagementScript : MonoBehaviour
         }
     }
 
-    IEnumerator TypeLine(string[] lines, float textSpeed)
+    public IEnumerator TypeLine(string[] lines, float textSpeed)
     {
         foreach (char c in lines[index].ToCharArray())
         {
