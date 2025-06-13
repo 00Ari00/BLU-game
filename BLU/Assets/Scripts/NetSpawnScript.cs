@@ -7,11 +7,13 @@ public class NetSpawnScript : MonoBehaviour
     public float spawnRate;
     public float timer;
     public float heightOffset;
+    private LogicScript logic;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         spawnNet();
+        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
     }
 
     public int maxNets;
@@ -20,6 +22,8 @@ public class NetSpawnScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (logic.isGameOver) return;
 
         if (timer < spawnRate)
         {
