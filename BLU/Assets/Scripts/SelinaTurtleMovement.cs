@@ -22,9 +22,6 @@ public class SelinaTurtleMovement : MonoBehaviour
     // This function is called every fixed framerate frane, if MonoBehaviour is enabled
     void FixedUpdate()
     {
-
-
-
         if (isMoving) {
 
             turtleRB.linearVelocity = new Vector2(moveSpeed, turtleRB.linearVelocity.y);
@@ -34,5 +31,6 @@ public class SelinaTurtleMovement : MonoBehaviour
             turtleRB.linearVelocity = Vector2.zero;
             isMoving = false;
         }
-    }
+    }    
+
 }
