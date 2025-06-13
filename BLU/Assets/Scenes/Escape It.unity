@@ -154,7 +154,7 @@ MonoBehaviour:
   gameOverScreen: {fileID: 671262312}
   youWinScreen: {fileID: 633112570}
   turtleBody: {fileID: 1557619020}
-  winScore: 20
+  winScore: 10
 --- !u!4 &157335876
 Transform:
   m_ObjectHideFlags: 0

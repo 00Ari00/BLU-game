@@ -50,7 +50,6 @@ public class TurtleScript : MonoBehaviour
     {
         if (other.gameObject.name == "TopBoundary" || other.gameObject.name == "BottomBoundary")
         {
-            // Option: stop movement or call gameOver
             Debug.Log("Hit boundary!");
         }
     }
