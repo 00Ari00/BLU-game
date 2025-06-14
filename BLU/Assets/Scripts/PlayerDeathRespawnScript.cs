@@ -15,9 +15,14 @@ public class PlayerDeathRespawnScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Respawn")
+        if (collision.gameObject.CompareTag("Respawn"))
         {
             Die();
+        }
+        else if (collision.gameObject.CompareTag("Checkpoint"))
+        {
+            Debug.Log("Checkpoint");
+            SetRespawn();
         }
     }
 
@@ -32,6 +37,11 @@ public class PlayerDeathRespawnScript : MonoBehaviour
         yield return new WaitForSeconds(duration);
         transform.position = startPos;
         spriteRenderer.enabled = true;
+    }
+    
+    void SetRespawn()
+    {
+        startPos = transform.position;
     }
 
 

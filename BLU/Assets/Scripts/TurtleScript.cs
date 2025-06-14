@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class TurtleScript : MonoBehaviour
 {
-
     public Rigidbody2D myRigidBody;
     public float swimStrength;
     public LogicScript logic;
