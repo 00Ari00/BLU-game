@@ -11,7 +11,7 @@ public class SelinaTurtleMovement : MonoBehaviour
     
     void Start()
     {
-     this.transform.position = new Vector3 (-38.46f, -22.52f, -4);
+     this.transform.position = new Vector3 (35.4f, -19.6f, -4);
     }
     
     // Update is called once per frame
