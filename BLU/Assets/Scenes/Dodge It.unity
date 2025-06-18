@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9b5555457fa49dc9a112586fbc59bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 5
   resetY: 6
   minX: -7
   maxX: 7
@@ -540,7 +540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9b5555457fa49dc9a112586fbc59bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.5
+  speed: 4
   resetY: 6
   minX: -7
   maxX: 7
