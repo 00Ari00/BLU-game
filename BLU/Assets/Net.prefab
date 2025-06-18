@@ -199,6 +199,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   deadZone: -50
+  floatStrength: 0.5
+  floatSpeed: 2
+  originalY: 0.5
+  floatOffset: 0
 --- !u!61 &5973292249749612267
 BoxCollider2D:
   m_ObjectHideFlags: 0
