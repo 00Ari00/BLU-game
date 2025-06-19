@@ -3444,7 +3444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turtleRB: {fileID: 588368177}
-  moveSpeed: 3
+  moveSpeed: 5
   stopXPosition: 487
   textBoxController: {fileID: 53197761}
 --- !u!114 &588368181
