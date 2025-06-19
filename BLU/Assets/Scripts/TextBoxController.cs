@@ -7,16 +7,15 @@ public class TextBoxController : MonoBehaviour
 {
     public GameObject TextBoxPanel; //Panel with background
     public TMP_Text messageText; //Text
-    public float typingSpeed = 0.05f; //Time between letters
+    public float typingSpeed = 0.01f; //Time between letters
     public float displayTime = 2f; //Time to display full message
     private Coroutine typingCoroutine;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    /*void Start()
+    void Start()
     {
-        textboxPanel.SetActive(false);
-   
-    }*/
+        TextBoxPanel.SetActive(false);
+    }
 
 
 

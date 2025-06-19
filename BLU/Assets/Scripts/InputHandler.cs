@@ -12,7 +12,7 @@ public class InputHandler : MonoBehaviour
         _mainCamera = Camera.main;
         if (textBoxController == null)
         {
-        textBoxController = FindObjectOfType<TextBoxController>();
+        textBoxController = FindAnyObjectByType<TextBoxController>();
         }
     }
 
@@ -22,8 +22,6 @@ public class InputHandler : MonoBehaviour
 
         var rayHit = Physics2D.GetRayIntersection(_mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue()));
         if (!rayHit.collider) return;
-
-        Debug.Log(rayHit.collider.gameObject.name);
 
         var textTrigger = rayHit.collider.GetComponent<ClickToRevealText>();
         if (textTrigger != null)
