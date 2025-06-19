@@ -3,19 +3,23 @@ using UnityEngine.InputSystem;
 
 public class InputHandler : MonoBehaviour
 {
+    //Variable
     private Camera _mainCamera;
     public TextBoxController textBoxController;
 
-
+    
     private void Awake()
     {
         _mainCamera = Camera.main;
+
+        //if the textBoxController hasn't been assigned, find one in the scene
         if (textBoxController == null)
         {
-        textBoxController = FindAnyObjectByType<TextBoxController>();
+            textBoxController = FindAnyObjectByType<TextBoxController>();
         }
     }
 
+    //When clicked on an object reveal the message
     public void OnClick(InputAction.CallbackContext context)
     {
         if (!context.started) return;
