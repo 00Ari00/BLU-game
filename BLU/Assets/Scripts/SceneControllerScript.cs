@@ -17,8 +17,8 @@ public class SceneControllerScript : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
-    public void ReturnToMainScene()
+    public void GoToScene(int scene)
     {
-        SceneManager.LoadSceneAsync(0); // scene 1 is main scene
+        SceneManager.LoadSceneAsync(scene); // scene 1 is main scene
     }
 }
