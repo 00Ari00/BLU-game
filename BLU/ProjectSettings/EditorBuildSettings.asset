@@ -23,5 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dodge It.unity
     guid: 2864a49b0c71e4a268f9798afeaddb48
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 28c4e9b28dd1445c4928f8a8f7ca882f, type: 3}
   m_UseUCBPForAssetBundles: 0
