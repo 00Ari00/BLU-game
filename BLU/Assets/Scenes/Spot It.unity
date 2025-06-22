@@ -255,6 +255,7 @@ GameObject:
   - component: {fileID: 32613207}
   - component: {fileID: 32613208}
   - component: {fileID: 32613209}
+  - component: {fileID: 32613210}
   m_Layer: 0
   m_Name: SeaAnimalSprite_1
   m_TagString: Untagged
@@ -271,7 +272,7 @@ Transform:
   m_GameObject: {fileID: 32613206}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 56.523193, y: -6, z: 111.17}
+  m_LocalPosition: {x: 82.04, y: -6, z: 111.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -368,6 +369,29 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.42
+--- !u!114 &32613210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32613206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09b830f658454ff4abd2db7280fffc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: 'Species: Blue Tang (Paracanthurus hepatus)
+
+
+    Description: The Blue
+    Tang is a vibrant reef fish known for its electric blue body, yellow tail, and
+    bold black markings. It has a disc-shaped, laterally compressed body and is often
+    found in coral reefs throughout the Indo-Pacific.
+
+
+    Challenges: Coral reef
+    degradation affects their habitat and food sources (like algae).'
 --- !u!1 &36007805
 GameObject:
   m_ObjectHideFlags: 0
@@ -885,6 +909,7 @@ GameObject:
   - component: {fileID: 148134954}
   - component: {fileID: 148134955}
   - component: {fileID: 148134956}
+  - component: {fileID: 148134957}
   m_Layer: 0
   m_Name: SeaAnimalSprite_2 (1)
   m_TagString: Untagged
@@ -998,6 +1023,30 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.82
+--- !u!114 &148134957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148134953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09b830f658454ff4abd2db7280fffc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: 'Species: Moon Jellyfish (Aurelia aurita).
+
+
+    Description: Jellyfish
+    are soft-bodied, gelatinous sea creatures with umbrella-shaped bells and trailing
+    tentacles. They use their tentacles to sting and capture prey. Despite lacking
+    brains, hearts, or bones, they are highly efficient predators and have existed
+    for over 500 million years.
+
+
+    Challenges: Warming oceans can benefit some
+    jellyfish, leading to population booms, which can disrupt ecosystems.'
 --- !u!1 &168818649
 GameObject:
   m_ObjectHideFlags: 0
@@ -2031,6 +2080,7 @@ GameObject:
   - component: {fileID: 321632275}
   - component: {fileID: 321632276}
   - component: {fileID: 321632277}
+  - component: {fileID: 321632278}
   m_Layer: 0
   m_Name: SeaAnimalSprite_3
   m_TagString: Untagged
@@ -2047,7 +2097,7 @@ Transform:
   m_GameObject: {fileID: 321632274}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 97.4, y: -11.3, z: 111.51723}
+  m_LocalPosition: {x: 97.4, y: -9.17, z: 111.51723}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2144,6 +2194,27 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.82
+--- !u!114 &321632278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321632274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09b830f658454ff4abd2db7280fffc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: "Common Seahorse (Hippocampus kuda), though there are over 40 known species
+    globally.\n\nDescription:\nSeahorses are small, slow-moving fish with horse-like
+    heads, curled prehensile tails, and upright swimming posture. They rely on camouflage
+    to blend into seagrasses and corals. \n\nChallenges: Loss of habitat such as
+    coral reefs and seagrass beds from warming waters and ocean acidification.\n\nStronger
+    storms and coastal development caused by climate shifts damage shallow areas
+    where seahorses live.\n\nTemperature stress can affect reproduction and survival
+    rates.\n\nChanging currents may interfere with their ability to anchor and feed
+    effectively.\n\n"
 --- !u!1 &328868120
 GameObject:
   m_ObjectHideFlags: 0
@@ -2329,6 +2400,7 @@ GameObject:
   - component: {fileID: 392028106}
   - component: {fileID: 392028107}
   - component: {fileID: 392028108}
+  - component: {fileID: 392028109}
   m_Layer: 0
   m_Name: SeaAnimalSprite_5 (1)
   m_TagString: Untagged
@@ -2442,6 +2514,28 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.425
+--- !u!114 &392028109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392028105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09b830f658454ff4abd2db7280fffc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: 'Species: Red Lionfish (Pterois volitans)
+
+
+    Description: Lionfish
+    are striking, venomous fish with bold red, white, and brown stripes and long,
+    fan-like fins.
+
+
+    Challenges: Coral reef decline indirectly benefits lionfish
+    in some areas, as they thrive in disturbed ecosystems.'
 --- !u!1 &399925284
 GameObject:
   m_ObjectHideFlags: 0
@@ -3350,7 +3444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turtleRB: {fileID: 588368177}
-  moveSpeed: 3
+  moveSpeed: 5
   stopXPosition: 487
   textBoxController: {fileID: 53197761}
 --- !u!114 &588368181
@@ -3813,6 +3907,7 @@ GameObject:
   - component: {fileID: 737052439}
   - component: {fileID: 737052440}
   - component: {fileID: 737052441}
+  - component: {fileID: 737052442}
   m_Layer: 0
   m_Name: SeaAnimalSprite_1 (1)
   m_TagString: Untagged
@@ -3926,6 +4021,29 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.42
+--- !u!114 &737052442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737052438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09b830f658454ff4abd2db7280fffc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: 'Species: Blue Tang (Paracanthurus hepatus)
+
+
+    Description: The Blue
+    Tang is a vibrant reef fish known for its electric blue body, yellow tail, and
+    bold black markings. It has a disc-shaped, laterally compressed body and is often
+    found in coral reefs throughout the Indo-Pacific.
+
+
+    Challenges: Coral reef
+    degradation affects their habitat and food sources (like algae).'
 --- !u!1 &742303442
 GameObject:
   m_ObjectHideFlags: 0
@@ -6769,8 +6887,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -83, y: 70}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -326, y: 70}
+  m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1526856868
 MonoBehaviour:
@@ -6792,7 +6910,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ehbwkfjbewkjfbewkjbfkejfbwkwjbefkjwebkjbwekjfbwkejfbehbwkfjbewkjfbewkjbfkejfbwkwjbefkjwebkjbwekjfbwkejfbehbwkfjbewkjfbewkjbfkejfbwkwjbefkjwebkjbwekjfbwkejfb
+  m_text: ' '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6857,7 +6975,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -913.46466, w: -412.0603}
+  m_margin: {x: 0, y: 0, z: -1312.0513, w: -412.0603}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -7631,6 +7749,7 @@ GameObject:
   - component: {fileID: 1765285258}
   - component: {fileID: 1765285259}
   - component: {fileID: 1765285260}
+  - component: {fileID: 1765285261}
   m_Layer: 0
   m_Name: SeaAnimalSprite_5
   m_TagString: Untagged
@@ -7744,6 +7863,28 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.425
+--- !u!114 &1765285261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765285257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09b830f658454ff4abd2db7280fffc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: 'Species: Red Lionfish (Pterois volitans)
+
+
+    Description: Lionfish
+    are striking, venomous fish with bold red, white, and brown stripes and long,
+    fan-like fins.
+
+
+    Challenges: Coral reef decline indirectly benefits lionfish
+    in some areas, as they thrive in disturbed ecosystems.'
 --- !u!1 &1794212114
 GameObject:
   m_ObjectHideFlags: 0
@@ -7755,6 +7896,7 @@ GameObject:
   - component: {fileID: 1794212115}
   - component: {fileID: 1794212116}
   - component: {fileID: 1794212117}
+  - component: {fileID: 1794212118}
   m_Layer: 0
   m_Name: SeaAnimalSprite_3 (1)
   m_TagString: Untagged
@@ -7771,7 +7913,7 @@ Transform:
   m_GameObject: {fileID: 1794212114}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 393.6, y: -11.3, z: 111.51723}
+  m_LocalPosition: {x: 402.78, y: -7.77, z: 111.51723}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7868,6 +8010,27 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.82
+--- !u!114 &1794212118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794212114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09b830f658454ff4abd2db7280fffc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: "Common Seahorse (Hippocampus kuda), though there are over 40 known species
+    globally.\n\nDescription:\nSeahorses are small, slow-moving fish with horse-like
+    heads, curled prehensile tails, and upright swimming posture. They rely on camouflage
+    to blend into seagrasses and corals. \n\nChallenges: Loss of habitat such as
+    coral reefs and seagrass beds from warming waters and ocean acidification.\n\nStronger
+    storms and coastal development caused by climate shifts damage shallow areas
+    where seahorses live.\n\nTemperature stress can affect reproduction and survival
+    rates.\n\nChanging currents may interfere with their ability to anchor and feed
+    effectively.\n\n"
 --- !u!1 &1801596171
 GameObject:
   m_ObjectHideFlags: 0
@@ -8140,6 +8303,7 @@ GameObject:
   - component: {fileID: 1858839857}
   - component: {fileID: 1858839858}
   - component: {fileID: 1858839859}
+  - component: {fileID: 1858839860}
   m_Layer: 0
   m_Name: SeaAnimalSprite_2
   m_TagString: Untagged
@@ -8156,7 +8320,7 @@ Transform:
   m_GameObject: {fileID: 1858839856}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 98, y: -5.1, z: 111.17}
+  m_LocalPosition: {x: 119.88, y: -5.1, z: 111.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8253,6 +8417,30 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.82
+--- !u!114 &1858839860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858839856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09b830f658454ff4abd2db7280fffc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: 'Species: Moon Jellyfish (Aurelia aurita).
+
+
+    Description: Jellyfish
+    are soft-bodied, gelatinous sea creatures with umbrella-shaped bells and trailing
+    tentacles. They use their tentacles to sting and capture prey. Despite lacking
+    brains, hearts, or bones, they are highly efficient predators and have existed
+    for over 500 million years.
+
+
+    Challenges: Warming oceans can benefit some
+    jellyfish, leading to population booms, which can disrupt ecosystems.'
 --- !u!1 &1875701259
 GameObject:
   m_ObjectHideFlags: 0
@@ -8694,8 +8882,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -180, y: -267.13333}
-  m_SizeDelta: {x: -509.9842, y: -348.1389}
+  m_AnchoredPosition: {x: -255.86655, y: -275}
+  m_SizeDelta: {x: -571.7332, y: -610}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2044792990
 MonoBehaviour:
